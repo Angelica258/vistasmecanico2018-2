@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+	<title>Taller Mecanico</title>
+</head>
+<body id="cuerpo">
+    <nav class="menu">
+        <div  class="ImgMeca">
+            <img src="img/Mecanico.jpg">
+            <h4>Jose Manuel Rojas</h4>
+            <hr>
+        </div>
+        <ul class="">
+            <li><a href="#" data-seleccion="index"><i class="fa fas fa-chalkboard-teacher" id="fa-2x"></i><span class="nav-text">Ingresar Orden de Servicio index</span></a></li>
+            <li><a href="#" data-seleccion="RVenta"><i class="fa fas fa-calculator " id="fa-2x"></i><span class="nav-text">Registrar Venta RVenta</span></a></li>
+            <li><a href="#" data-seleccion="RCliente"><i class="fa fas fa-user-plus" id="fa-2x"></i><span class="nav-text">Registrar Cliente RCliente</span></a></li>
+            <li><a href="#" data-seleccion="RVehiculo"><i class="fa fas fa-car" id="fa-2x"></i><span class="nav-text">Registrar Vehiculo RVehiculo</span></a></li>
+            <li><a href="#" data-seleccion="ConsultarH"><i class="fa fas fa-search" id="fa-2x"></i><span class="nav-text">Consultar Historial ConsultarH</span></a></li>    
+            <li><a href="#" data-seleccion="AgendarCita"><i class="fa far fa-calendar-check" id="fa-2x"></i><span class="nav-text">Agendar Cita AgendarCita</span></a></li>
+
+            
+            <li><a href="#" data-seleccion="HistorialS"><i class="fa far fa-calendar-check" id="fa-2x"></i><span class="nav-text">HistorialS</span></a></li>           
+        </ul>
+
+        <ul class="menu-salir">
+            <li><a href="#"><i class="fa fa-power-off" id="fa-2x"></i><span class="nav-text">Salir</span></a></li>  
+        </ul>
+    </nav>
+    <div class="contenedor" >
+        <div  class="logoE">
+            <img src="img/logo.png">
+            <hr>
+        </div>
+        <div id="contenido">
+          <h3><strong> index-Buscar Cliente</strong></h3><br>
+          <br>
+          <h5 >No. Cedula</h5>
+            <form class="navbar-form" id="buscar" action="">
+                <div class="input-group">
+                    <input type="number" required="" class="form-control" placeholder="1093258741">
+                    <div class="input-group-btn">
+                        <button class="btn btn-info"  required="" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <button class="btn btn-info" required="" type="submit">Buscar</button>
+            </form>
+            
+            <br><br>
+            <h5 class="Cindex">Cliente: Juan Jose Bernal</h5>
+            <h5 >Cedula: 1093258741</h5>
+        
+        <br><br>
+        <div>
+            <h4><strong>Lista de Vehiculos</strong></h4><br>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Tipo de Vehiculo</th>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Seleccionar</th>
+                    <th>Historial</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Vehiculo Familiar</td>
+                    <td>CUC527</td>
+                    <td>Blanco</td>
+                    <td><a href="" data-seleccion="ROrden">Ingresar Vehiculo ROrden</a></td>
+                    <td>
+                        <a class="btn btn-info" href="" data-seleccion="ConsultarH" >ConsultarH<i class="fas fa-eye"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vehiculo Familiar</td>
+                    <td>CUC789</td>
+                    <td>Gris</td>
+                    <td><a href="">Ingresar Vehiculo</a></td>
+                    <td>
+                        <a class="btn btn-info" href="#" role="button"><i class="fas fa-eye"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>       
+    </div>
+
+
+</body>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/javascript.js"></script>
+</html>
